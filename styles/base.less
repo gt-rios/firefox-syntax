@@ -1,0 +1,488 @@
+@import "syntax-variables";
+
+atom-text-editor,
+:host {
+	background-color: @syntax-background-color;
+	color: @syntax-text-color;
+	
+	.wrap-guide {
+		background-color: @syntax-wrap-guide-color;
+	}
+	
+	.indent-guide {
+		color: @syntax-indent-guide-color;
+	}
+	
+	.invisible-character {
+		color: @syntax-invisible-character-color;
+	}
+	
+	.gutter {
+		.line-number {
+			color: @syntax-gutter-text-color;
+			opacity: inherit;
+		}
+	}
+	
+	.invisible {
+		color: @syntax-text-color;
+	}
+	
+	.cursor {
+		border-color: @syntax-cursor-color;
+	}
+	
+	.selection .region {
+		background-color: @syntax-selection-color;
+	}
+	
+	.line.cursor-line {
+		background-color: @syntax-cursor-line;
+	}
+	
+	.bracket-matcher .region {
+		border: 1px solid @syntax-indent-guide-color;
+		box-sizing: border-box;
+	}
+	
+	.find-result,
+	.current-result {
+		.region {
+			background-color: @syntax-result-marker-color !important;
+			border: 0 !important;
+			border-radius: 0 !important;
+		}
+	}
+}
+
+.comment {
+	color: @syntax-comment;
+	
+	.keyword {
+		color: inherit;
+	}
+}
+
+.entity {
+	&.c, &.clojure, &.cs, &.coffee, &.gfm, &.git-config, &.go, &.java, &.makefile, &.objc, &.objcpp, &.perl6, &.perl, &.php, &.python, &.ruby, &.shell, &.sql {
+		color: @syntax-highlight-1;
+	}
+	
+	&.name {
+		&.function {
+			&.constructor,
+			&.scss {
+				color: @syntax-highlight-1;
+			}
+		}
+		
+		&.section {
+			color: @syntax-highlight-5;
+		}
+		
+		&.tag {
+			color: @syntax-highlight-5;
+			
+			&.mustache {
+				color: @syntax-highlight-2;
+			}
+			
+			&.wildcard {
+				color: @syntax-text-color;
+			}
+			
+			&.yaml {
+				color: @syntax-highlight-1;
+			}
+		}
+		
+		&.type {
+			color: @syntax-highlight-1;
+			
+			&.instance,
+			&.object {
+				color: @syntax-highlight-5;
+			}
+			
+			.punctuation.separator.inheritance {
+				color: @syntax-text-color;
+			}
+		}
+	}
+	
+	&.other.attribute-name {
+		color: @syntax-highlight-1;
+		
+		&.attribute {
+			color: @syntax-highlight-5;
+		}
+		
+		&.parent-selector,
+		&.pseudo-class,
+		&.pseudo-element {
+			color: @syntax-text-color;
+		}
+	}
+}
+
+.keyword {
+	color: @syntax-highlight-2;
+	
+	&.control {
+		&.at-rule {
+			color: @syntax-highlight-1;
+			
+			.keyword {
+				color: inherit;
+			}
+		}
+		
+		&.html.elements {
+			color: @syntax-highlight-5;
+		}
+	}
+	
+	&.operator {
+		color: @syntax-text-color;
+		
+		&.control,
+		&.cpp,
+		&.delete,
+		&.in,
+		&.instanceof,
+		&.logic.media,
+		&.new,
+		&.of,
+		&.sizeof,
+		&.typeof,
+		&.void {
+			color: @syntax-highlight-2;
+		}
+		
+		&.logical {
+			&.control {
+				color: @syntax-text-color;
+			}
+			
+			&.perl,
+			&.python {
+				color: @syntax-highlight-2;
+			}
+		}
+	}
+	
+	&.other.unit {
+		color: @syntax-highlight-4;
+	}
+}
+
+.storage {
+	color: @syntax-highlight-2;
+	
+	&.type {
+		&.arrow {
+			color: @syntax-text-color;
+		}
+		
+		&.string {
+			color: @syntax-highlight-2;
+		}
+	}
+}
+
+.constant {
+	&.character.entity,
+	&.language {
+		color: @syntax-highlight-6;
+	}
+	
+	&.numeric {
+		color: @syntax-highlight-4;
+	}
+	
+	&.other {
+		&.bareword,
+		&.java,
+		&.key,
+		&.property {
+			color: @syntax-highlight-1;
+		}
+		
+		&.color.rgb-value,
+		&.rgb-value {
+			color: @syntax-highlight-6;
+		}
+		
+		&.rune {
+			color: @syntax-highlight-3;
+		}
+		
+		&.symbol {
+			color: @syntax-highlight-2;
+		}
+	}
+}
+
+.variable {
+	&.c, &.clojure, &.cs, &.coffee, &.git-config, &.go, &.java, &.makefile, &.objc, &.objcpp, &.perl6, &.perl, &.python, &.ruby, &.shell, &.sql, &.toml,
+	&.other.property,
+	&.parameter.function {
+		color: @syntax-highlight-1;
+	}
+	
+	&.gfm {
+		color: @syntax-highlight-3;
+	}
+	
+	&.language {
+		color: @syntax-highlight-2;
+	}
+	
+	&.php {
+		color: @syntax-text-color;
+	}
+}
+
+.string {
+	color: @syntax-highlight-3;
+	
+	&.other.math,
+	.embedded {
+		color: @syntax-text-color;
+	}
+	
+	.keyword.regexp {
+		color: inherit;
+	}
+}
+
+.punctuation {
+	&.definition {
+		&.entity,
+		&.variable {
+			color: inherit;
+		}
+		
+		&.entry,
+		&.table {
+			color: @syntax-text-color;
+		}
+		
+		&.string {
+			color: inherit;
+			
+			&.html,
+			&.xml {
+				color: @syntax-text-color;
+			}
+		}
+	}
+	
+	&.other.period + .support.function {
+		color: @syntax-highlight-1;
+	}
+	
+	&.section {
+		&.array {
+			color: @syntax-text-color;
+		}
+		
+		&.embedded {
+			&.coffee,
+			&.js,
+			&.ruby {
+				color: @syntax-highlight-3;
+			}
+			
+			&.erb,
+			&.php {
+				color: @syntax-highlight-2;
+			}
+		}
+		
+		&.function + .constant.other.color.rgb-value {
+			color: @syntax-highlight-4;
+		}
+	}
+	
+	&.separator.key-value {
+		color: @syntax-text-color;
+	}
+}
+
+.support {
+	&.class {
+		color: @syntax-highlight-5;
+		
+		&.cocoa,
+		&.quartz {
+			color: @syntax-highlight-2;
+		}
+	}
+	
+	&.constant {
+		&.color.w3c-standard-color-name,
+		&.property-value {
+			color: @syntax-highlight-6;
+		}
+		
+		&.font-name {
+			color: @syntax-highlight-5;
+		}
+		
+		&.js,
+		&.media {
+			color: @syntax-highlight-1;
+		}
+	}
+	
+	&.function {
+		color: @syntax-highlight-5;
+		
+		&.any-method {
+			&.c,
+			&.objc {
+				color: @syntax-highlight-1;
+			}
+		}
+		
+		&.magic {
+			color: @syntax-highlight-1;
+		}
+	}
+	
+	&.type.property-name {
+		color: @syntax-highlight-1;
+	}
+}
+
+.meta {
+	&.at-rule.import .support.function {
+		color: @syntax-highlight-6;
+	}
+	
+	&.delimiter.method + .support.function,
+	&.function.arguments .variable.other,
+	&.symbol {
+		color: @syntax-highlight-1;
+	}
+	
+	&.function,
+	&.method,
+	&.method-call {
+		.entity.name.function {
+			color: @syntax-highlight-1;
+		}
+	}
+	
+	&.function-call {
+		&.object,
+		&.static {
+			color: @syntax-highlight-1;
+		}
+		
+		&.python {
+			color: @syntax-highlight-1;
+			
+			.punctuation {
+				color: @syntax-text-color;
+			}
+		}
+	}
+	
+	&.method-call .meta.method {
+		color: @syntax-highlight-1;
+		
+		&.delimiter.period {
+			color: inherit;
+		}
+	}
+	
+	&.property-value .variable.parameter.misc {
+		color: @syntax-highlight-3;
+	}
+	
+	&.scope.prerequisites {
+		color: @syntax-highlight-5;
+	}
+	
+	&.structure.json {
+		&.dictionary > .string.quoted {
+			color: @syntax-highlight-1;
+				
+			& > .punctuation.string {
+				color: @syntax-text-color;
+			}
+		}
+		
+		&.array,
+		&.dictionary {
+			& > .value > .string.quoted,
+			& > .value > .string.quoted > .punctuation {
+				color: @syntax-highlight-3;
+			}
+		}
+	}
+	
+	&.tag.string {
+		color: inherit;
+	}
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+.invalid {
+	border-bottom: 1px dashed @syntax-color-removed;
+	
+	&.deprecated {
+		border-bottom-color: @syntax-color-modified;
+	}
+}
+
+// Languages
+
+.markup {
+	&.bold {
+		color: @syntax-highlight-1;
+		font-weight: bold;
+	}
+	
+	&.changed {
+		color: @syntax-color-modified;
+	}
+	
+	&.deleted {
+		color: @syntax-color-removed;
+	}
+	
+	&.heading {
+		color: @syntax-highlight-5;
+	}
+	
+	&.inserted {
+		color: @syntax-color-added;
+	}
+	
+	&.italic {
+		color: @syntax-highlight-1;
+		font-style: italic;
+	}
+	
+	&.link.gfm {
+		color: @syntax-highlight-3;
+	}
+	
+	&.raw {
+		color: @syntax-highlight-2;
+	}
+	
+	&.strike {
+		color: @syntax-comment;
+	}
+}
+
+.source.go .entity.name.function {
+	color: @syntax-highlight-1;
+}

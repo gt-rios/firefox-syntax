@@ -1,0 +1,42 @@
+// This defines all syntax variables that syntax themes must implement when they
+// include a syntax-variables.less file.
+
+// General colors
+@syntax-text-color: #393F4C;
+@syntax-cursor-color: @syntax-text-color;
+@syntax-selection-color: #B9D7FD;
+@syntax-selection-flash-color: @syntax-selection-color;
+@syntax-background-color: #FFF;
+
+// Guide colors
+@syntax-wrap-guide-color: mix(#000, @syntax-background-color, 25%);
+@syntax-indent-guide-color: @syntax-wrap-guide-color;
+@syntax-invisible-character-color: @syntax-wrap-guide-color;
+
+// For find and replace markers
+@syntax-result-marker-color: fade(#FF0, 40%);
+@syntax-result-marker-color-selected: @syntax-selection-color;
+
+// Gutter colors
+@syntax-gutter-text-color: #667380;
+@syntax-gutter-text-color-selected: @syntax-gutter-text-color;
+@syntax-gutter-background-color: @syntax-background-color;
+@syntax-gutter-background-color-selected: @syntax-gutter-background-color;
+
+// For git diff info. i.e. in the gutter
+@syntax-color-added: green;
+@syntax-color-modified: orange;
+@syntax-color-removed: red;
+@syntax-color-renamed: blue;
+
+// These colors are specific to the theme. Do not use in a package!
+
+@syntax-comment: #696969;
+@syntax-cursor-line: fade(@syntax-selection-color, 35%);
+
+@syntax-highlight-1: #0088CC; // Attribute, function, property, selector, etc.
+@syntax-highlight-2: #D97E00; // Keyword, storage, embedded, etc.
+@syntax-highlight-3: #F13C00; // String
+@syntax-highlight-4: #2CBB0F; // Numeric, unit
+@syntax-highlight-5: #0072AB; // Entity, support, tag, etc.
+@syntax-highlight-6: #ED2655; // Property-value, language, etc.

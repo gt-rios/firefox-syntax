@@ -1,0 +1,35 @@
+{
+  "name": "firefox-syntax",
+  "main": "./lib/main",
+  "theme": "syntax",
+  "version": "2.0.0",
+  "description": "Firefox DevTools syntax with different subthemes",
+  "keywords": [
+    "firefox",
+    "dark",
+    "light",
+    "syntax"
+  ],
+  "repository": "https://github.com/gt-rios/firefox-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "configSchema": {
+    "subtheme": {
+      "description": "Choose the one of the different subthemes",
+      "type": "string",
+      "default": "default-light",
+      "enum": [
+        {
+          "value": "default-dark",
+          "label": "Default Dark"
+        },
+        {
+          "value": "default-light",
+          "label": "Default Light"
+        }
+      ]
+    }
+  }
+}
