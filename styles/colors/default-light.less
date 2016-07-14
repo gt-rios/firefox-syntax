@@ -24,10 +24,10 @@
 @syntax-gutter-background-color-selected: @syntax-gutter-background-color;
 
 // For git diff info. i.e. in the gutter
-@syntax-color-added: green;
-@syntax-color-modified: orange;
-@syntax-color-removed: red;
-@syntax-color-renamed: blue;
+@syntax-color-added: mix(#0F0, @syntax-gutter-background-color, 60%);
+@syntax-color-modified: mix(#FF8000, @syntax-gutter-background-color, 60%);
+@syntax-color-removed: mix(#F00, @syntax-gutter-background-color, 60%);
+@syntax-color-renamed: mix(#00F, @syntax-gutter-background-color, 60%);
 
 // These colors are specific to the theme. Do not use in a package!
 
