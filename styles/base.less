@@ -246,8 +246,7 @@ atom-text-editor,
 .string {
 	color: @syntax-highlight-3;
 	
-	&.other.math,
-	.embedded {
+	&.other.math {
 		color: @syntax-text-color;
 	}
 	
@@ -426,6 +425,14 @@ atom-text-editor,
 	
 	&.tag.string {
 		color: inherit;
+	}
+}
+
+.meta,
+.source,
+.text {
+	&.embedded {
+		color: @syntax-text-color;
 	}
 }
 
