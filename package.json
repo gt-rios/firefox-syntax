@@ -23,11 +23,11 @@
       "enum": [
         {
           "value": "default-dark",
-          "label": "Default Dark"
+          "description": "Default Dark"
         },
         {
           "value": "default-light",
-          "label": "Default Light"
+          "description": "Default Light"
         }
       ]
     }
