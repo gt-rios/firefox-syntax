@@ -17,11 +17,9 @@ atom-text-editor,
 		color: @syntax-invisible-character-color;
 	}
 	
-	.gutter {
-		.line-number {
-			color: @syntax-gutter-text-color;
-			opacity: inherit;
-		}
+	.gutter .line-number {
+		color: @syntax-gutter-text-color;
+		opacity: inherit;
 	}
 	
 	.invisible {
@@ -277,11 +275,6 @@ atom-text-editor,
 		
 		&.string {
 			color: inherit;
-			
-			&.html,
-			&.xml {
-				color: @syntax-text-color;
-			}
 		}
 	}
 	
@@ -367,10 +360,6 @@ atom-text-editor,
 }
 
 .meta {
-	&.at-rule.import .support.function {
-		color: @syntax-constant;
-	}
-	
 	&.delimiter.method + .support.function,
 	&.function.arguments .variable.other,
 	&.symbol {
