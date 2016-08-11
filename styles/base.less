@@ -114,7 +114,15 @@ atom-text-editor,
 		color: @syntax-markup-attribute;
 		
 		&.attribute {
-			color: @syntax-style-tag;
+			color: @syntax-markup-tag;
+		}
+		
+		&.class {
+			color: @syntax-style-class;
+		}
+		
+		&.id {
+			color: @syntax-style-id;
 		}
 		
 		&.parent-selector,
@@ -138,7 +146,7 @@ atom-text-editor,
 		}
 		
 		&.html.elements {
-			color: @syntax-style-tag;
+			color: @syntax-markup-tag;
 		}
 	}
 	
@@ -329,9 +337,12 @@ atom-text-editor,
 			color: @syntax-support;
 		}
 		
-		&.js,
-		&.media {
+		&.js {
 			color: @syntax-variable;
+		}
+		
+		&.media {
+			color: @syntax-style-media;
 		}
 	}
 	
