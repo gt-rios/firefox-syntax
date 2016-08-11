@@ -21,22 +21,27 @@
 @syntax-gutter-text-color: #667380;
 @syntax-gutter-text-color-selected: @syntax-gutter-text-color;
 @syntax-gutter-background-color: @syntax-background-color;
-@syntax-gutter-background-color-selected: @syntax-gutter-background-color;
+@syntax-gutter-background-color-selected: @syntax-background-color;
 
 // For git diff info. i.e. in the gutter
-@syntax-color-added: mix(#0F0, @syntax-gutter-background-color, 60%);
-@syntax-color-modified: mix(#FF8000, @syntax-gutter-background-color, 60%);
-@syntax-color-removed: mix(#F00, @syntax-gutter-background-color, 60%);
-@syntax-color-renamed: mix(#00F, @syntax-gutter-background-color, 60%);
+@syntax-color-added: mix(#0F0, @syntax-background-color, 60%);
+@syntax-color-modified: mix(#FF8000, @syntax-background-color, 60%);
+@syntax-color-removed: mix(#F00, @syntax-background-color, 60%);
+@syntax-color-renamed: mix(#00F, @syntax-background-color, 60%);
 
 // These colors are specific to the theme. Do not use in a package!
 
 @syntax-comment: #696969;
+@syntax-constant: #ED2655;
 @syntax-cursor-line: fade(@syntax-selection-color, 35%);
-
-@syntax-highlight-1: #0088CC; // Attribute, function, property, selector, etc.
-@syntax-highlight-2: #D97E00; // Keyword, storage, embedded, etc.
-@syntax-highlight-3: #F13C00; // String
-@syntax-highlight-4: #2CBB0F; // Numeric, unit
-@syntax-highlight-5: #0072AB; // Entity, support, tag, etc.
-@syntax-highlight-6: #ED2655; // Property-value, language, etc.
+@syntax-entity: #0088CC;
+@syntax-keyword: #D97E00;
+@syntax-markup-attribute: @syntax-entity;
+@syntax-markup-tag: #0072AB;
+@syntax-numeric: #2CBB0F;
+@syntax-string: #F13C00;
+@syntax-style-at-rule: @syntax-entity;
+@syntax-style-property: @syntax-entity;
+@syntax-style-tag: @syntax-markup-tag;
+@syntax-support: @syntax-markup-tag;
+@syntax-variable: @syntax-entity;

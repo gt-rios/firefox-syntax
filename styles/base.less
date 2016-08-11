@@ -65,26 +65,26 @@ atom-text-editor,
 
 .entity {
 	&.c, &.clojure, &.cs, &.coffee, &.gfm, &.git-config, &.go, &.java, &.makefile, &.objc, &.objcpp, &.perl6, &.perl, &.php, &.python, &.ruby, &.shell, &.sql {
-		color: @syntax-highlight-1;
+		color: @syntax-entity;
 	}
 	
 	&.name {
 		&.function {
 			&.constructor,
 			&.scss {
-				color: @syntax-highlight-1;
+				color: @syntax-entity;
 			}
 		}
 		
 		&.section {
-			color: @syntax-highlight-5;
+			color: @syntax-support;
 		}
 		
 		&.tag {
-			color: @syntax-highlight-5;
+			color: @syntax-markup-tag;
 			
 			&.mustache {
-				color: @syntax-highlight-2;
+				color: @syntax-keyword;
 			}
 			
 			&.wildcard {
@@ -92,16 +92,16 @@ atom-text-editor,
 			}
 			
 			&.yaml {
-				color: @syntax-highlight-1;
+				color: @syntax-entity;
 			}
 		}
 		
 		&.type {
-			color: @syntax-highlight-1;
+			color: @syntax-entity;
 			
 			&.instance,
 			&.object {
-				color: @syntax-highlight-5;
+				color: @syntax-support;
 			}
 			
 			.punctuation.separator.inheritance {
@@ -111,10 +111,10 @@ atom-text-editor,
 	}
 	
 	&.other.attribute-name {
-		color: @syntax-highlight-1;
+		color: @syntax-markup-attribute;
 		
 		&.attribute {
-			color: @syntax-highlight-5;
+			color: @syntax-style-tag;
 		}
 		
 		&.parent-selector,
@@ -126,11 +126,11 @@ atom-text-editor,
 }
 
 .keyword {
-	color: @syntax-highlight-2;
+	color: @syntax-keyword;
 	
 	&.control {
 		&.at-rule {
-			color: @syntax-highlight-1;
+			color: @syntax-style-at-rule;
 			
 			.keyword {
 				color: inherit;
@@ -138,7 +138,7 @@ atom-text-editor,
 		}
 		
 		&.html.elements {
-			color: @syntax-highlight-5;
+			color: @syntax-style-tag;
 		}
 	}
 	
@@ -156,7 +156,7 @@ atom-text-editor,
 		&.sizeof,
 		&.typeof,
 		&.void {
-			color: @syntax-highlight-2;
+			color: @syntax-keyword;
 		}
 		
 		&.logical {
@@ -166,18 +166,18 @@ atom-text-editor,
 			
 			&.perl,
 			&.python {
-				color: @syntax-highlight-2;
+				color: @syntax-keyword;
 			}
 		}
 	}
 	
 	&.other.unit {
-		color: @syntax-highlight-4;
+		color: @syntax-numeric;
 	}
 }
 
 .storage {
-	color: @syntax-highlight-2;
+	color: @syntax-keyword;
 	
 	&.type {
 		&.arrow {
@@ -185,7 +185,7 @@ atom-text-editor,
 		}
 		
 		&.string {
-			color: @syntax-highlight-2;
+			color: @syntax-keyword;
 		}
 	}
 }
@@ -193,11 +193,11 @@ atom-text-editor,
 .constant {
 	&.character.entity,
 	&.language {
-		color: @syntax-highlight-6;
+		color: @syntax-constant;
 	}
 	
 	&.numeric {
-		color: @syntax-highlight-4;
+		color: @syntax-numeric;
 	}
 	
 	&.other {
@@ -205,20 +205,20 @@ atom-text-editor,
 		&.java,
 		&.key,
 		&.property {
-			color: @syntax-highlight-1;
+			color: @syntax-variable;
 		}
 		
 		&.color.rgb-value,
 		&.rgb-value {
-			color: @syntax-highlight-6;
+			color: @syntax-constant;
 		}
 		
 		&.rune {
-			color: @syntax-highlight-3;
+			color: @syntax-string;
 		}
 		
 		&.symbol {
-			color: @syntax-highlight-2;
+			color: @syntax-keyword;
 		}
 	}
 }
@@ -227,15 +227,15 @@ atom-text-editor,
 	&.c, &.clojure, &.cs, &.coffee, &.git-config, &.go, &.java, &.makefile, &.objc, &.objcpp, &.perl6, &.perl, &.python, &.ruby, &.shell, &.sql, &.toml,
 	&.other.property,
 	&.parameter.function {
-		color: @syntax-highlight-1;
+		color: @syntax-variable;
 	}
 	
 	&.gfm {
-		color: @syntax-highlight-3;
+		color: @syntax-string;
 	}
 	
 	&.language {
-		color: @syntax-highlight-2;
+		color: @syntax-keyword;
 	}
 	
 	&.php {
@@ -244,7 +244,7 @@ atom-text-editor,
 }
 
 .string {
-	color: @syntax-highlight-3;
+	color: @syntax-string;
 	
 	&.other.math {
 		color: @syntax-text-color;
@@ -278,7 +278,7 @@ atom-text-editor,
 	}
 	
 	&.other.period + .support.function {
-		color: @syntax-highlight-1;
+		color: @syntax-variable;
 	}
 	
 	&.section {
@@ -290,17 +290,17 @@ atom-text-editor,
 			&.coffee,
 			&.js,
 			&.ruby {
-				color: @syntax-highlight-3;
+				color: @syntax-string;
 			}
 			
 			&.erb,
 			&.php {
-				color: @syntax-highlight-2;
+				color: @syntax-keyword;
 			}
 		}
 		
 		&.function + .constant.other.color.rgb-value {
-			color: @syntax-highlight-4;
+			color: @syntax-numeric;
 		}
 	}
 	
@@ -311,77 +311,77 @@ atom-text-editor,
 
 .support {
 	&.class {
-		color: @syntax-highlight-5;
+		color: @syntax-support;
 		
 		&.cocoa,
 		&.quartz {
-			color: @syntax-highlight-2;
+			color: @syntax-keyword;
 		}
 	}
 	
 	&.constant {
 		&.color.w3c-standard-color-name,
 		&.property-value {
-			color: @syntax-highlight-6;
+			color: @syntax-constant;
 		}
 		
 		&.font-name {
-			color: @syntax-highlight-5;
+			color: @syntax-support;
 		}
 		
 		&.js,
 		&.media {
-			color: @syntax-highlight-1;
+			color: @syntax-variable;
 		}
 	}
 	
 	&.function {
-		color: @syntax-highlight-5;
+		color: @syntax-support;
 		
 		&.any-method {
 			&.c,
 			&.objc {
-				color: @syntax-highlight-1;
+				color: @syntax-variable;
 			}
 		}
 		
 		&.magic {
-			color: @syntax-highlight-1;
+			color: @syntax-variable;
 		}
 	}
 	
 	&.type.property-name {
-		color: @syntax-highlight-1;
+		color: @syntax-style-property;
 	}
 }
 
 .meta {
 	&.at-rule.import .support.function {
-		color: @syntax-highlight-6;
+		color: @syntax-constant;
 	}
 	
 	&.delimiter.method + .support.function,
 	&.function.arguments .variable.other,
 	&.symbol {
-		color: @syntax-highlight-1;
+		color: @syntax-variable;
 	}
 	
 	&.function,
 	&.method,
 	&.method-call {
 		.entity.name.function {
-			color: @syntax-highlight-1;
+			color: @syntax-variable;
 		}
 	}
 	
 	&.function-call {
 		&.object,
 		&.static {
-			color: @syntax-highlight-1;
+			color: @syntax-variable;
 		}
 		
 		&.python {
-			color: @syntax-highlight-1;
+			color: @syntax-variable;
 			
 			.punctuation {
 				color: @syntax-text-color;
@@ -390,7 +390,7 @@ atom-text-editor,
 	}
 	
 	&.method-call .meta.method {
-		color: @syntax-highlight-1;
+		color: @syntax-variable;
 		
 		&.delimiter.period {
 			color: inherit;
@@ -398,16 +398,16 @@ atom-text-editor,
 	}
 	
 	&.property-value .variable.parameter.misc {
-		color: @syntax-highlight-3;
+		color: @syntax-string;
 	}
 	
 	&.scope.prerequisites {
-		color: @syntax-highlight-5;
+		color: @syntax-support;
 	}
 	
 	&.structure.json {
 		&.dictionary > .string.quoted {
-			color: @syntax-highlight-1;
+			color: @syntax-variable;
 				
 			& > .punctuation.string {
 				color: @syntax-text-color;
@@ -418,7 +418,7 @@ atom-text-editor,
 		&.dictionary {
 			& > .value > .string.quoted,
 			& > .value > .string.quoted > .punctuation {
-				color: @syntax-highlight-3;
+				color: @syntax-string;
 			}
 		}
 	}
@@ -452,7 +452,7 @@ atom-text-editor,
 
 .markup {
 	&.bold {
-		color: @syntax-highlight-1;
+		color: @syntax-markup-attribute;
 		font-weight: bold;
 	}
 	
@@ -465,7 +465,7 @@ atom-text-editor,
 	}
 	
 	&.heading {
-		color: @syntax-highlight-5;
+		color: @syntax-markup-tag;
 	}
 	
 	&.inserted {
@@ -473,16 +473,16 @@ atom-text-editor,
 	}
 	
 	&.italic {
-		color: @syntax-highlight-1;
+		color: @syntax-markup-attribute;
 		font-style: italic;
 	}
 	
 	&.link.gfm {
-		color: @syntax-highlight-3;
+		color: @syntax-string;
 	}
 	
 	&.raw {
-		color: @syntax-highlight-2;
+		color: @syntax-keyword;
 	}
 	
 	&.strike {
@@ -491,5 +491,5 @@ atom-text-editor,
 }
 
 .source.go .entity.name.function {
-	color: @syntax-highlight-1;
+	color: @syntax-entity;
 }
