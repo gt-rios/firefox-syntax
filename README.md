@@ -4,7 +4,7 @@
 
 A syntax theme for [Atom](https://atom.io) based on the
 [Firefox DevTools](https://developer.mozilla.org/en/docs/Tools). This package
-includes different subthemes for alternate versions of the DevTools,
+includes subthemes — to replicate different versions of the DevTools —
 and it supports all of the [Atom core languages](https://github.com/atom/language-examples#languages).
 
 ![](https://cloud.githubusercontent.com/assets/17343833/16637508/1c155562-43a5-11e6-9312-379f59201638.gif)
@@ -26,4 +26,8 @@ the __Syntax Themes__ drop-down menu.
 
 ## Settings
 
-Once activated, you can change the __Subtheme__ in the theme settings.
+Once activated, you can change the __Subtheme__ in the theme settings:
+
+1. `Default Dark` - Firefox 48
+2. `Default Light` (default) - Firefox 48
+3. `Firebug` :new:

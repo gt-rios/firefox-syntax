@@ -90,7 +90,7 @@ atom-text-editor,
 			}
 			
 			&.yaml {
-				color: @syntax-entity;
+				color: @syntax-variable;
 			}
 		}
 		
@@ -231,8 +231,7 @@ atom-text-editor,
 
 .variable {
 	&.c, &.clojure, &.cs, &.coffee, &.git-config, &.go, &.java, &.makefile, &.objc, &.objcpp, &.perl6, &.perl, &.python, &.ruby, &.shell, &.sql, &.toml,
-	&.other.property,
-	&.parameter.function {
+	&.other.property {
 		color: @syntax-variable;
 	}
 	
@@ -242,6 +241,15 @@ atom-text-editor,
 	
 	&.language {
 		color: @syntax-keyword;
+	}
+	
+	&.parameter {
+		color: syntax-entity;
+		
+		&.misc,
+		&.url {
+			color: inherit;
+		}
 	}
 	
 	&.php {
@@ -339,7 +347,7 @@ atom-text-editor,
 		}
 		
 		&.media {
-			color: @syntax-style-media;
+			color: @syntax-markup-attribute;
 		}
 	}
 	
@@ -364,17 +372,23 @@ atom-text-editor,
 }
 
 .meta {
+	&.delimiter.method {
+		color: @syntax-text-color;
+	}
+	
 	&.delimiter.method + .support.function,
-	&.function.arguments .variable.other,
 	&.symbol {
 		color: @syntax-variable;
 	}
 	
+	&.function.arguments .variable.other {
+		color: @syntax-entity;
+	}
+	
 	&.function,
-	&.method,
-	&.method-call {
+	&.method {
 		.entity.name.function {
-			color: @syntax-variable;
+			color: @syntax-entity;
 		}
 	}
 	
@@ -393,11 +407,10 @@ atom-text-editor,
 		}
 	}
 	
-	&.method-call .meta.method {
-		color: @syntax-variable;
-		
-		&.delimiter.period {
-			color: inherit;
+	&.method-call {
+		.entity.name.function,
+		.meta.method {
+			color: @syntax-variable;
 		}
 	}
 	
@@ -410,19 +423,19 @@ atom-text-editor,
 	}
 	
 	&.structure.json {
-		&.dictionary > .string.quoted {
-			color: @syntax-variable;
-				
-			& > .punctuation.string {
-				color: @syntax-text-color;
-			}
-		}
-		
 		&.array,
 		&.dictionary {
 			& > .value > .string.quoted,
-			& > .value > .string.quoted > .punctuation {
+			& > .value > .string.quoted > .punctuation.string {
 				color: @syntax-string;
+			}
+		}
+		
+		&.dictionary > .string.quoted {
+			color: @syntax-variable;
+			
+			& > .punctuation.string {
+				color: @syntax-text-color;
 			}
 		}
 	}

@@ -28,6 +28,10 @@
         {
           "value": "default-light",
           "description": "Default Light"
+        },
+        {
+          "value": "firebug",
+          "description": "Firebug"
         }
       ]
     }
