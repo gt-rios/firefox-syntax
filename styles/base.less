@@ -272,6 +272,7 @@ atom-text-editor,
 .punctuation {
 	&.definition {
 		&.entity,
+		&.string,
 		&.variable {
 			color: inherit;
 		}
@@ -279,10 +280,6 @@ atom-text-editor,
 		&.entry,
 		&.table {
 			color: @syntax-text-color;
-		}
-		
-		&.string {
-			color: inherit;
 		}
 		
 		&.tag {
@@ -372,10 +369,6 @@ atom-text-editor,
 }
 
 .meta {
-	&.delimiter.method {
-		color: @syntax-text-color;
-	}
-	
 	&.delimiter.method + .support.function,
 	&.symbol {
 		color: @syntax-variable;
@@ -409,7 +402,7 @@ atom-text-editor,
 	
 	&.method-call {
 		.entity.name.function,
-		.meta.method {
+		.meta.method:not(.delimiter) {
 			color: @syntax-variable;
 		}
 	}
@@ -425,18 +418,13 @@ atom-text-editor,
 	&.structure.json {
 		&.array,
 		&.dictionary {
-			& > .value > .string.quoted,
-			& > .value > .string.quoted > .punctuation.string {
+			& > .value > .string.quoted {
 				color: @syntax-string;
 			}
 		}
 		
 		&.dictionary > .string.quoted {
 			color: @syntax-variable;
-			
-			& > .punctuation.string {
-				color: @syntax-text-color;
-			}
 		}
 	}
 	
