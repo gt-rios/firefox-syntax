@@ -9,7 +9,7 @@
 @syntax-background-color: #14171A;
 
 // Guide colors
-@syntax-wrap-guide-color: mix(#FFF, @syntax-background-color, 25%);
+@syntax-wrap-guide-color: #343C45;
 @syntax-indent-guide-color: @syntax-wrap-guide-color;
 @syntax-invisible-character-color: @syntax-wrap-guide-color;
 
@@ -31,6 +31,7 @@
 
 // These colors are specific to the theme. Do not use in a package!
 
+@syntax-bracket-matcher: mix(#FFF, @syntax-background-color, 25%);
 @syntax-comment: #757873;
 @syntax-constant: #EB5368;
 @syntax-cursor-line: fade(@syntax-selection-color, 15%);
