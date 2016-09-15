@@ -231,7 +231,8 @@ atom-text-editor,
 
 .variable {
 	&.c, &.clojure, &.cs, &.coffee, &.git-config, &.go, &.java, &.makefile, &.objc, &.objcpp, &.perl6, &.perl, &.python, &.ruby, &.shell, &.sql, &.toml,
-	&.other.property {
+	&.other.property,
+	&.parameter.function.js {
 		color: @syntax-variable;
 	}
 	
@@ -241,15 +242,6 @@ atom-text-editor,
 	
 	&.language {
 		color: @syntax-keyword;
-	}
-	
-	&.parameter {
-		color: syntax-entity;
-		
-		&.misc,
-		&.url {
-			color: inherit;
-		}
 	}
 	
 	&.php {
