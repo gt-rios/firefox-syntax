@@ -19,7 +19,7 @@
     "subtheme": {
       "description": "Choose the one of the different subthemes",
       "type": "string",
-      "default": "default-light",
+      "default": "default-dark",
       "enum": [
         {
           "value": "default-dark",
@@ -32,6 +32,14 @@
         {
           "value": "firebug",
           "description": "Firebug"
+        },
+        {
+          "value": "firefox-48-dark",
+          "description": "Firefox 48 Dark"
+        },
+        {
+          "value": "firefox-48-light",
+          "description": "Firefox 48 Light"
         }
       ]
     }

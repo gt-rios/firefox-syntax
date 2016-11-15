@@ -2,14 +2,14 @@
 // include a syntax-variables.less file.
 
 // General colors
-@syntax-text-color: #A9BACB;
+@syntax-text-color: #8FA1B2;
 @syntax-cursor-color: @syntax-text-color;
-@syntax-selection-color: #485A83; // mix(#5675B9, @syntax-background-color)
+@syntax-selection-color: #35466A; // mix(#5675B9, @syntax-background-color)
 @syntax-selection-flash-color: @syntax-selection-color;
-@syntax-background-color: #393F4C;
+@syntax-background-color: #14171A;
 
 // Guide colors
-@syntax-wrap-guide-color: #272B35;
+@syntax-wrap-guide-color: #343C45;
 @syntax-indent-guide-color: @syntax-wrap-guide-color;
 @syntax-invisible-character-color: @syntax-wrap-guide-color;
 
@@ -35,15 +35,15 @@
 @syntax-comment: #757873;
 @syntax-constant: #EB5368;
 @syntax-cursor-line: fade(@syntax-selection-color, 30%);
-@syntax-entity: @syntax-text-color;
-@syntax-keyword: #00FF7F;
-@syntax-markup-attribute: #BCB8DB;
-@syntax-markup-tag: @syntax-keyword;
-@syntax-numeric: @syntax-constant;
-@syntax-string: #E9F4FE;
-@syntax-style-at-rule: @syntax-markup-attribute;
-@syntax-style-class: @syntax-markup-attribute;
-@syntax-style-id: @syntax-keyword;
-@syntax-style-property: @syntax-markup-attribute;
-@syntax-support: @syntax-string;
-@syntax-variable: @syntax-markup-attribute;
+@syntax-entity: #46AFE3;
+@syntax-keyword: #D99B28;
+@syntax-markup-attribute: @syntax-entity;
+@syntax-markup-tag: #DF80FF;
+@syntax-numeric: #70BF53;
+@syntax-string: #D96629;
+@syntax-style-at-rule: @syntax-entity;
+@syntax-style-class: @syntax-entity;
+@syntax-style-id: @syntax-markup-tag;
+@syntax-style-property: @syntax-entity;
+@syntax-support: @syntax-markup-tag;
+@syntax-variable: @syntax-entity;
