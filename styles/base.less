@@ -151,7 +151,7 @@ atom-text-editor,
 	&.operator {
 		color: @syntax-text-color;
 		
-		&.control,
+		&.control:not(.logical),
 		&.cpp,
 		&.delete,
 		&.in,
@@ -166,10 +166,6 @@ atom-text-editor,
 		}
 		
 		&.logical {
-			&.control {
-				color: @syntax-text-color;
-			}
-			
 			&.perl,
 			&.python {
 				color: @syntax-keyword;
@@ -479,8 +475,4 @@ atom-text-editor,
 	&.strike {
 		color: @syntax-comment;
 	}
-}
-
-.source.go .entity.name.function {
-	color: @syntax-entity;
 }
