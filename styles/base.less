@@ -3,45 +3,45 @@
 atom-text-editor {
 	background-color: @syntax-background-color;
 	color: @syntax-text-color;
-	
+
 	.wrap-guide {
 		background-color: @syntax-wrap-guide-color;
 	}
-	
+
 	.indent-guide {
 		color: @syntax-indent-guide-color;
 	}
-	
+
 	.invisible-character {
 		color: @syntax-invisible-character-color;
 	}
-	
+
 	.gutter .line-number {
 		color: @syntax-gutter-text-color;
 		opacity: inherit;
 	}
-	
+
 	.invisible {
 		color: @syntax-text-color;
 	}
-	
+
 	.cursor {
 		border-left: 2px solid @syntax-cursor-color;
 	}
-	
+
 	.selection .region {
 		background-color: @syntax-selection-color;
 	}
-	
+
 	.line.cursor-line {
 		background-color: @syntax-cursor-line;
 	}
-	
+
 	.bracket-matcher .region {
 		border: 1px solid @syntax-bracket-matcher;
 		box-sizing: border-box;
 	}
-	
+
 	.find-result,
 	.current-result {
 		.region {
@@ -54,7 +54,7 @@ atom-text-editor {
 
 .syntax--comment {
 	color: @syntax-comment;
-	
+
 	.syntax--keyword {
 		color: inherit;
 	}
@@ -64,7 +64,7 @@ atom-text-editor {
 	&.syntax--c, &.syntax--clojure, &.syntax--cs, &.syntax--coffee, &.syntax--gfm, &.syntax--git-config, &.syntax--go, &.syntax--java, &.syntax--makefile, &.syntax--objc, &.syntax--objcpp, &.syntax--perl6, &.syntax--perl, &.syntax--php, &.syntax--python, &.syntax--ruby, &.syntax--shell, &.syntax--sql {
 		color: @syntax-entity;
 	}
-	
+
 	&.syntax--name {
 		&.syntax--function {
 			&.syntax--constructor,
@@ -72,56 +72,56 @@ atom-text-editor {
 				color: @syntax-entity;
 			}
 		}
-		
+
 		&.syntax--section {
 			color: @syntax-support;
 		}
-		
+
 		&.syntax--tag {
 			color: @syntax-markup-tag;
-			
+
 			&.syntax--mustache {
 				color: @syntax-keyword;
 			}
-			
+
 			&.syntax--wildcard {
 				color: @syntax-text-color;
 			}
-			
+
 			&.syntax--yaml {
 				color: @syntax-variable;
 			}
 		}
-		
+
 		&.syntax--type {
 			color: @syntax-entity;
-			
+
 			&.syntax--instance,
 			&.syntax--object {
 				color: @syntax-support;
 			}
-			
+
 			.syntax--punctuation.syntax--separator.syntax--inheritance {
 				color: @syntax-text-color;
 			}
 		}
 	}
-	
+
 	&.syntax--other.syntax--attribute-name {
 		color: @syntax-markup-attribute;
-		
+
 		&.syntax--attribute {
 			color: @syntax-markup-tag;
 		}
-		
+
 		&.syntax--class {
 			color: @syntax-style-class;
 		}
-		
+
 		&.syntax--id {
 			color: @syntax-style-id;
 		}
-		
+
 		&.syntax--parent-selector,
 		&.syntax--pseudo-class,
 		&.syntax--pseudo-element {
@@ -132,24 +132,24 @@ atom-text-editor {
 
 .syntax--keyword {
 	color: @syntax-keyword;
-	
+
 	&.syntax--control {
 		&.syntax--at-rule {
 			color: @syntax-style-at-rule;
-			
+
 			.syntax--keyword {
 				color: inherit;
 			}
 		}
-		
+
 		&.syntax--html.syntax--elements {
 			color: @syntax-markup-tag;
 		}
 	}
-	
+
 	&.syntax--operator {
 		color: @syntax-text-color;
-		
+
 		&.syntax--control:not(.syntax--logical),
 		&.syntax--cpp,
 		&.syntax--delete,
@@ -163,7 +163,7 @@ atom-text-editor {
 		&.syntax--void {
 			color: @syntax-keyword;
 		}
-		
+
 		&.syntax--logical {
 			&.syntax--perl,
 			&.syntax--python {
@@ -171,7 +171,7 @@ atom-text-editor {
 			}
 		}
 	}
-	
+
 	&.syntax--other.syntax--unit {
 		color: @syntax-numeric;
 	}
@@ -179,12 +179,12 @@ atom-text-editor {
 
 .syntax--storage {
 	color: @syntax-keyword;
-	
+
 	&.syntax--type {
 		&.syntax--arrow {
 			color: @syntax-text-color;
 		}
-		
+
 		&.syntax--string {
 			color: @syntax-keyword;
 		}
@@ -196,11 +196,11 @@ atom-text-editor {
 	&.syntax--language {
 		color: @syntax-constant;
 	}
-	
+
 	&.syntax--numeric {
 		color: @syntax-numeric;
 	}
-	
+
 	&.syntax--other {
 		&.syntax--bareword,
 		&.syntax--java,
@@ -208,16 +208,16 @@ atom-text-editor {
 		&.syntax--property {
 			color: @syntax-variable;
 		}
-		
+
 		&.syntax--color.syntax--rgb-value,
 		&.syntax--rgb-value {
 			color: @syntax-constant;
 		}
-		
+
 		&.syntax--rune {
 			color: @syntax-string;
 		}
-		
+
 		&.syntax--symbol {
 			color: @syntax-keyword;
 		}
@@ -230,15 +230,15 @@ atom-text-editor {
 	&.syntax--parameter.syntax--function.syntax--js {
 		color: @syntax-variable;
 	}
-	
+
 	&.syntax--gfm {
 		color: @syntax-string;
 	}
-	
+
 	&.syntax--language {
 		color: @syntax-keyword;
 	}
-	
+
 	&.syntax--php {
 		color: @syntax-text-color;
 	}
@@ -246,11 +246,11 @@ atom-text-editor {
 
 .syntax--string {
 	color: @syntax-string;
-	
+
 	&.syntax--other.syntax--math {
 		color: @syntax-text-color;
 	}
-	
+
 	.syntax--keyword.syntax--regexp {
 		color: inherit;
 	}
@@ -263,43 +263,43 @@ atom-text-editor {
 		&.syntax--variable {
 			color: inherit;
 		}
-		
+
 		&.syntax--entry {
 			color: @syntax-text-color;
 		}
-		
+
 		&.syntax--tag {
 			color: @syntax-markup-tag;
 		}
 	}
-	
+
 	&.syntax--other.syntax--period + .syntax--support.syntax--function {
 		color: @syntax-variable;
 	}
-	
+
 	&.syntax--section {
 		&.syntax--array {
 			color: @syntax-text-color;
 		}
-		
+
 		&.syntax--embedded {
 			&.syntax--coffee,
 			&.syntax--js,
 			&.syntax--ruby {
 				color: @syntax-string;
 			}
-			
+
 			&.syntax--erb,
 			&.syntax--php {
 				color: @syntax-keyword;
 			}
 		}
-		
+
 		&.syntax--function + .syntax--constant.syntax--other.syntax--color.syntax--rgb-value {
 			color: @syntax-numeric;
 		}
 	}
-	
+
 	&.syntax--separator.syntax--key-value {
 		color: @syntax-text-color;
 	}
@@ -308,47 +308,47 @@ atom-text-editor {
 .syntax--support {
 	&.syntax--class {
 		color: @syntax-support;
-		
+
 		&.syntax--cocoa,
 		&.syntax--quartz {
 			color: @syntax-keyword;
 		}
 	}
-	
+
 	&.syntax--constant {
 		&.syntax--color.syntax--w3c-standard-color-name,
 		&.syntax--property-value {
 			color: @syntax-constant;
 		}
-		
+
 		&.syntax--font-name {
 			color: @syntax-support;
 		}
-		
+
 		&.syntax--js {
 			color: @syntax-variable;
 		}
-		
+
 		&.syntax--media {
 			color: @syntax-markup-attribute;
 		}
 	}
-	
+
 	&.syntax--function {
 		color: @syntax-support;
-		
+
 		&.syntax--any-method {
 			&.syntax--c,
 			&.syntax--objc {
 				color: @syntax-variable;
 			}
 		}
-		
+
 		&.syntax--magic {
 			color: @syntax-variable;
 		}
 	}
-	
+
 	&.syntax--type.syntax--property-name {
 		color: @syntax-style-property;
 	}
@@ -359,40 +359,40 @@ atom-text-editor {
 	&.syntax--symbol {
 		color: @syntax-variable;
 	}
-	
+
 	&.syntax--function.syntax--arguments .syntax--variable.syntax--other {
 		color: @syntax-entity;
 	}
-	
+
 	&.syntax--function,
 	&.syntax--method {
 		.syntax--entity.syntax--name.syntax--function {
 			color: @syntax-entity;
 		}
 	}
-	
+
 	&.syntax--function-call {
 		&.syntax--object,
 		&.syntax--static {
 			color: @syntax-variable;
 		}
 	}
-	
+
 	&.syntax--method-call {
 		.syntax--entity.syntax--name.syntax--function,
 		.syntax--meta.syntax--method:not(.syntax--delimiter) {
 			color: @syntax-variable;
 		}
 	}
-	
+
 	&.syntax--property-value .syntax--variable.syntax--parameter.syntax--misc {
 		color: @syntax-string;
 	}
-	
+
 	&.syntax--scope.syntax--prerequisites {
 		color: @syntax-support;
 	}
-	
+
 	&.syntax--structure.syntax--json {
 		&.syntax--array,
 		&.syntax--dictionary {
@@ -400,12 +400,12 @@ atom-text-editor {
 				color: @syntax-string;
 			}
 		}
-		
+
 		&.syntax--dictionary > .syntax--string.syntax--quoted {
 			color: @syntax-variable;
 		}
 	}
-	
+
 	&.syntax--tag {
 		&.syntax--sgml .syntax--punctuation.syntax--definition.syntax--tag,
 		&.syntax--string {
@@ -428,7 +428,7 @@ atom-text-editor {
 
 .syntax--invalid {
 	border-bottom: 1px dashed @syntax-color-removed;
-	
+
 	&.syntax--deprecated {
 		border-bottom-color: @syntax-color-modified;
 	}
@@ -441,36 +441,36 @@ atom-text-editor {
 		color: @syntax-markup-attribute;
 		font-weight: bold;
 	}
-	
+
 	&.syntax--changed {
 		color: @syntax-color-modified;
 	}
-	
+
 	&.syntax--deleted {
 		color: @syntax-color-removed;
 	}
-	
+
 	&.syntax--heading {
 		color: @syntax-markup-tag;
 	}
-	
+
 	&.syntax--inserted {
 		color: @syntax-color-added;
 	}
-	
+
 	&.syntax--italic {
 		color: @syntax-markup-attribute;
 		font-style: italic;
 	}
-	
+
 	&.syntax--link.syntax--gfm {
 		color: @syntax-string;
 	}
-	
+
 	&.syntax--raw {
 		color: @syntax-keyword;
 	}
-	
+
 	&.syntax--strike {
 		color: @syntax-comment;
 	}
