@@ -3,7 +3,7 @@
   "main": "./lib/main",
   "theme": "syntax",
   "version": "3.1.0",
-  "description": "Firefox DevTools syntax with different subthemes",
+  "description": "Firefox DevTools syntax. Includes 5 different subthemes",
   "keywords": [
     "firefox",
     "dark",
@@ -17,7 +17,7 @@
   },
   "configSchema": {
     "subtheme": {
-      "description": "Choose the one of the different subthemes",
+      "description": "Choose from one of the available subthemes",
       "type": "string",
       "default": "default-dark",
       "enum": [
