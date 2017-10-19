@@ -358,6 +358,10 @@ atom-text-editor {
 }
 
 .syntax--meta {
+	&.syntax--blade {
+		color: @syntax-text-color;
+	}
+
 	&.syntax--delimiter.syntax--method + .syntax--support.syntax--function,
 	&.syntax--symbol {
 		color: @syntax-variable;
