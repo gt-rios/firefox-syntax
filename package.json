@@ -3,7 +3,7 @@
   "main": "./lib/main",
   "theme": "syntax",
   "version": "3.2.0",
-  "description": "Firefox DevTools syntax. Includes 5 different subthemes",
+  "description": "Firefox DevTools syntax. Includes different themes",
   "keywords": [
     "firefox",
     "dark",
@@ -40,6 +40,14 @@
         {
           "value": "firefox-48-light",
           "description": "Firefox 48 Light"
+        },
+        {
+          "value": "firefox-56-dark",
+          "description": "Firefox 56 Dark"
+        },
+        {
+          "value": "firefox-56-light",
+          "description": "Firefox 56 Light"
         }
       ]
     }

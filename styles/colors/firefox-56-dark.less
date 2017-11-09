@@ -2,14 +2,14 @@
 // include a syntax-variables.less file.
 
 // General colors
-@syntax-text-color: #D7D7DB;
+@syntax-text-color: #A9BACB;
 @syntax-cursor-color: @syntax-text-color;
 @syntax-selection-color: #485A83; // mix(#5675B9, @syntax-background-color)
 @syntax-selection-flash-color: @syntax-selection-color;
-@syntax-background-color: #2A2A2E;
+@syntax-background-color: #393F4C;
 
 // Guide colors
-@syntax-wrap-guide-color: #3C3C3D;
+@syntax-wrap-guide-color: #272B35;
 @syntax-indent-guide-color: @syntax-wrap-guide-color;
 @syntax-invisible-character-color: @syntax-wrap-guide-color;
 
@@ -18,7 +18,7 @@
 @syntax-result-marker-color-selected: @syntax-selection-color;
 
 // Gutter colors
-@syntax-gutter-text-color: #939393;
+@syntax-gutter-text-color: #5F7387;
 @syntax-gutter-text-color-selected: @syntax-gutter-text-color;
 @syntax-gutter-background-color: @syntax-background-color;
 @syntax-gutter-background-color-selected: @syntax-background-color;
@@ -32,18 +32,18 @@
 // These colors are specific to the theme. Do not use in a package!
 
 @syntax-bracket-matcher: mix(#FFF, @syntax-background-color, 25%);
-@syntax-comment: @syntax-gutter-text-color;
-@syntax-constant: #FF7DE9;
+@syntax-comment: #757873;
+@syntax-constant: #EB5368;
 @syntax-cursor-line: fade(@syntax-selection-color, 30%);
-@syntax-entity: #75BFFF;
-@syntax-keyword: @syntax-constant;
-@syntax-markup-attribute: @syntax-constant;
-@syntax-markup-tag: @syntax-entity;
-@syntax-numeric: #6B89FF;
-@syntax-property: #86DE74;
-@syntax-string: @syntax-numeric;
-@syntax-style-at-rule: @syntax-entity;
-@syntax-style-class: @syntax-entity;
-@syntax-style-id: @syntax-constant;
-@syntax-support: #B98EFF;
-@syntax-variable: @syntax-entity;
+@syntax-entity: @syntax-text-color;
+@syntax-keyword: #00FF7F;
+@syntax-markup-attribute: #BCB8DB;
+@syntax-markup-tag: @syntax-keyword;
+@syntax-numeric: @syntax-constant;
+@syntax-property: @syntax-markup-attribute;
+@syntax-string: #E9F4FE;
+@syntax-style-at-rule: @syntax-markup-attribute;
+@syntax-style-class: @syntax-markup-attribute;
+@syntax-style-id: @syntax-keyword;
+@syntax-support: @syntax-string;
+@syntax-variable: @syntax-markup-attribute;

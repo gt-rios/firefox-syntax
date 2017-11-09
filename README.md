@@ -1,8 +1,10 @@
 # Firefox Syntax theme
 
-A syntax theme for [Atom](https://atom.io) based on the [Firefox DevTools](https://developer.mozilla.org/en/docs/Tools). This package includes 5 different subthemes: They are dark, light and old versions of the DevTools' themes. Firefox syntax supports all of the [Atom core languages](https://github.com/atom/language-examples#languages).
+> [Firefox Quantum](https://www.mozilla.org/en-US/firefox/quantum) is almost here! :tada: This release adds the latest themes matching the new syntax colors!
 
-![](https://cloud.githubusercontent.com/assets/17343833/20321447/7e8edd70-ab43-11e6-889b-5549e14f2d4f.gif)
+A syntax theme for [Atom](https://atom.io) based on the [Firefox DevTools](https://developer.mozilla.org/en/docs/Tools). This package includes different themes based on dark, light and past DevTools themes. Firefox Syntax supports all of the [Atom core languages](https://github.com/atom/language-examples#languages).
+
+![](https://user-images.githubusercontent.com/17343833/32626307-ed688f5a-c55c-11e7-85a1-c646b81b6739.gif)
 
 > The font used in the screencast is [Fira Mono](https://github.com/mozilla/Fira). The UI themes used are [One dark](https://atom.io/themes/one-dark-ui) and [One light](https://atom.io/themes/one-light-ui).
 
@@ -25,3 +27,5 @@ Once activated, you can change the __Subtheme__ in the theme settings:
 3. `Firebug`
 4. `Firefox 48 Dark`
 5. `Firefox 48 Light`
+6. `Firefox 56 Dark`
+7. `Firefox 56 Light`

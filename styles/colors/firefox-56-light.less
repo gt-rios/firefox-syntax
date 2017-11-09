@@ -2,14 +2,14 @@
 // include a syntax-variables.less file.
 
 // General colors
-@syntax-text-color: #D7D7DB;
+@syntax-text-color: #393F4C;
 @syntax-cursor-color: @syntax-text-color;
-@syntax-selection-color: #485A83; // mix(#5675B9, @syntax-background-color)
+@syntax-selection-color: #B9D7FD;
 @syntax-selection-flash-color: @syntax-selection-color;
-@syntax-background-color: #2A2A2E;
+@syntax-background-color: #FFF;
 
 // Guide colors
-@syntax-wrap-guide-color: #3C3C3D;
+@syntax-wrap-guide-color: #DDE1E4;
 @syntax-indent-guide-color: @syntax-wrap-guide-color;
 @syntax-invisible-character-color: @syntax-wrap-guide-color;
 
@@ -18,7 +18,7 @@
 @syntax-result-marker-color-selected: @syntax-selection-color;
 
 // Gutter colors
-@syntax-gutter-text-color: #939393;
+@syntax-gutter-text-color: #667380;
 @syntax-gutter-text-color-selected: @syntax-gutter-text-color;
 @syntax-gutter-background-color: @syntax-background-color;
 @syntax-gutter-background-color-selected: @syntax-background-color;
@@ -31,19 +31,19 @@
 
 // These colors are specific to the theme. Do not use in a package!
 
-@syntax-bracket-matcher: mix(#FFF, @syntax-background-color, 25%);
-@syntax-comment: @syntax-gutter-text-color;
-@syntax-constant: #FF7DE9;
-@syntax-cursor-line: fade(@syntax-selection-color, 30%);
-@syntax-entity: #75BFFF;
+@syntax-bracket-matcher: mix(#000, @syntax-background-color, 25%);
+@syntax-comment: #696969;
+@syntax-constant: #ED2655;
+@syntax-cursor-line: fade(@syntax-selection-color, 35%);
+@syntax-entity: @syntax-text-color;
 @syntax-keyword: @syntax-constant;
 @syntax-markup-attribute: @syntax-constant;
-@syntax-markup-tag: @syntax-entity;
-@syntax-numeric: #6B89FF;
-@syntax-property: #86DE74;
+@syntax-markup-tag: #08C;
+@syntax-numeric: #5B5FFF;
+@syntax-property: @syntax-constant;
 @syntax-string: @syntax-numeric;
-@syntax-style-at-rule: @syntax-entity;
-@syntax-style-class: @syntax-entity;
+@syntax-style-at-rule: @syntax-text-color;
+@syntax-style-class: @syntax-markup-tag;
 @syntax-style-id: @syntax-constant;
-@syntax-support: #B98EFF;
+@syntax-support: @syntax-markup-tag;
 @syntax-variable: @syntax-entity;
