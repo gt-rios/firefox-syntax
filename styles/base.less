@@ -313,7 +313,7 @@ atom-text-editor {
 		}
 	}
 
-	&.syntax--property.syntax--dom {
+	&.syntax--variable.syntax--property.syntax--dom {
 		color: @syntax-property;
 	}
 
@@ -395,6 +395,10 @@ atom-text-editor {
 		}
 	}
 
+	&.syntax--parameters .syntax--support.syntax--variable.syntax--dom {
+		color: @syntax-variable;
+	}
+
 	&.syntax--property-value .syntax--variable.syntax--parameter.syntax--misc {
 		color: @syntax-string;
 	}
@@ -462,6 +466,7 @@ atom-text-editor {
 
 	&.syntax--heading {
 		color: @syntax-markup-tag;
+		font-weight: bold;
 	}
 
 	&.syntax--inserted {
