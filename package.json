@@ -2,7 +2,7 @@
   "name": "firefox-syntax",
   "main": "./lib/main",
   "theme": "syntax",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "Firefox DevTools syntax. Includes different themes",
   "keywords": [
     "firefox",
