@@ -1,6 +1,6 @@
 # Firefox Syntax theme
 
-> [Firefox Quantum](https://www.mozilla.org/en-US/firefox/quantum) is almost here! :tada: This release adds themes matching the new syntax colors!
+> [Firefox Quantum](https://www.mozilla.org/en-US/firefox/quantum) is ~~almost~~ here! :tada: This release adds themes matching the new syntax colors!
 
 A syntax theme for [Atom](https://atom.io) based on the [Firefox DevTools](https://developer.mozilla.org/en/docs/Tools). This package includes different themes based on dark, light and past DevTools themes. Firefox Syntax supports all of the [Atom core languages](https://github.com/atom/language-examples#languages).
 
