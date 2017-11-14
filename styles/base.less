@@ -33,7 +33,8 @@ atom-text-editor {
 		background-color: @syntax-selection-color;
 	}
 
-	.line.cursor-line {
+	.line.cursor-line,
+	.line-number.bracket-matcher {
 		background-color: @syntax-cursor-line;
 	}
 
@@ -204,7 +205,8 @@ atom-text-editor {
 		&.syntax--bareword,
 		&.syntax--java,
 		&.syntax--key,
-		&.syntax--property {
+		&.syntax--property,
+		&.syntax--symbol {
 			color: @syntax-property;
 		}
 
@@ -216,15 +218,11 @@ atom-text-editor {
 		&.syntax--rune {
 			color: @syntax-string;
 		}
-
-		&.syntax--symbol {
-			color: @syntax-keyword;
-		}
 	}
 }
 
 .syntax--variable {
-	&.syntax--c, &.syntax--clojure, &.syntax--cs, &.syntax--coffee, &.syntax--git-config, &.syntax--go, &.syntax--java, &.syntax--makefile, &.syntax--objc, &.syntax--objcpp, &.syntax--perl6, &.syntax--perl, &.syntax--php, &.syntax--python, &.syntax--ruby, &.syntax--shell, &.syntax--sql, &.syntax--toml,
+	&.syntax--c, &.syntax--clojure, &.syntax--cs, &.syntax--coffee, &.syntax--git-config, &.syntax--go, &.syntax--java, &.syntax--makefile, &.syntax--objc, &.syntax--objcpp, &.syntax--perl6, &.syntax--perl, &.syntax--php, &.syntax--python, &.syntax--ruby, &.syntax--shell, &.syntax--sql,
 	&.syntax--parameter.syntax--function.syntax--js {
 		color: @syntax-variable;
 	}
@@ -237,7 +235,8 @@ atom-text-editor {
 		color: @syntax-keyword;
 	}
 
-	&.syntax--other.syntax--property {
+	&.syntax--property,
+	&.syntax--toml {
 		color: @syntax-property;
 	}
 }
