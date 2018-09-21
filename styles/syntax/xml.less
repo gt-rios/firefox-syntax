@@ -1,0 +1,19 @@
+.syntax--xml {
+  &.syntax--keyword {
+    &.syntax--other.syntax--doctype {
+      color: @syntax-markup-tag;
+    }
+  }
+
+  &.syntax--punctuation {
+    &.syntax--definition.syntax--tag {
+      color: @syntax-markup-tag;
+    }
+  }
+
+  &.syntax--variable {
+    &.syntax--language.syntax--documentroot {
+      color: @syntax-markup-tag;
+    }
+  }
+}
