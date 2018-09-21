@@ -1,0 +1,40 @@
+.syntax--less {
+  &.syntax--keyword {
+    &.syntax--control.syntax--at-rule {
+      color: @syntax-style-at-rule;
+    }
+  }
+
+  // NOTE: workaround
+  &.syntax--source {
+    .syntax--entity.syntax--other.syntax--attribute-name.syntax--id {
+      color: @syntax-style-id;
+    }
+  }
+
+  &.syntax--variable {
+    &.syntax--other {
+      color: @syntax-entity;
+    }
+  }
+}
+
+.syntax--css {
+  &.syntax--entity {
+    &.syntax--other.syntax--attribute-name.syntax--parent-selector {
+      color: inherit;
+    }
+  }
+
+  &.syntax--meta {
+    &.syntax--brace {
+      color: @syntax-text-color;
+    }
+  }
+
+  &.syntax--string {
+    &.syntax--url {
+      color: @syntax-string;
+    }
+  }
+}

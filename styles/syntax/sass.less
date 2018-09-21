@@ -1,0 +1,123 @@
+.syntax--sass {
+  &.syntax--constant {
+    &.syntax--other {
+      color: @syntax-numeric;
+    }
+  }
+
+  &.syntax--entity {
+    &.syntax--other.syntax--attribute-name {
+      color: @syntax-style-class;
+    }
+  }
+
+  &.syntax--keyword {
+    &.syntax--control.syntax--at-rule {
+      color: @syntax-style-at-rule;
+    }
+
+    &.syntax--operator {
+      &.syntax--control,
+      &.syntax--logical {
+        color: @syntax-keyword;
+      }
+    }
+  }
+
+  &.syntax--meta {
+    &.syntax--variable-declaration,
+    &.syntax--variable-usage {
+      > .syntax--punctuation.syntax--definition.syntax--entity {
+        color: @syntax-entity;
+      }
+    }
+  }
+
+  &.syntax--variable {
+    &.syntax--other {
+      color: @syntax-entity;
+    }
+
+    &.syntax--parameter {
+      color: inherit;
+
+      &.syntax--url {
+        color: @syntax-string;
+      }
+    }
+  }
+}
+
+.syntax--scss {
+  &.syntax--constant {
+    &.syntax--other {
+      color: @syntax-entity;
+    }
+  }
+
+  &.syntax--entity {
+    &.syntax--name.syntax--tag {
+      &.syntax--reference,
+      &.syntax--wildcard {
+        color: inherit;
+      }
+    }
+
+    &.syntax--other.syntax--attribute-name {
+      color: @syntax-style-class;
+    }
+  }
+
+  &.syntax--keyword {
+    &.syntax--control.syntax--at-rule {
+      color: @syntax-style-at-rule;
+    }
+
+    &.syntax--operator.syntax--logical {
+      color: @syntax-keyword;
+    }
+
+    &.syntax--other.syntax--important {
+      color: @syntax-keyword;
+    }
+  }
+
+  &.syntax--meta {
+    &.syntax--at-rule.syntax--keyframes
+    > .syntax--entity.syntax--name.syntax--function {
+      color: @syntax-support;
+    }
+
+    &.syntax--definition.syntax--variable {
+      color: inherit;
+    }
+  }
+
+  &.syntax--punctuation {
+    &.syntax--definition.syntax--interpolation {
+      color: @syntax-string;
+    }
+  }
+
+  // NOTE: workaround
+  &.syntax--source {
+    .syntax--constant.syntax--numeric
+    + .syntax--constant.syntax--other {
+      color: @syntax-numeric;
+    }
+  }
+
+  &.syntax--support {
+    &.syntax--constant.syntax--mathematical-symbols {
+      color: inherit;
+    }
+  }
+
+  &.syntax--variable {
+    color: @syntax-entity;
+
+    &.syntax--parameter.syntax--url {
+      color: @syntax-string;
+    }
+  }
+}
